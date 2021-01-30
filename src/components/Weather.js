@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { apiKey } from '../apiKey';
+import '../App.css';
+import { ImSearch } from 'react-icons/im';
 
 const Weather = () => {
     const [query, setQuery] = useState('');
@@ -15,8 +17,11 @@ const Weather = () => {
     }
 
     return (
-        <div className="main-container">
-            <input type="text" className="search" placeholder="Search..." value={query} onChange={(e) => setQuery(e.target.value)} onKeyPress={search} />
+        <div className="container">
+            <div className="search_box">
+                <input type="text" className="search_bar" placeholder="Search..." value={query} onChange={(e) => setQuery(e.target.value)} onKeyPress={search} />
+                <ImSearch className="search_icon" size={25} />
+            </div>
             {weather.main && (
                 <h3>{weather.sys.country}</h3>
             )}
