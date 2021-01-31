@@ -28,7 +28,6 @@ const Weather = () => {
     const search = async (e) => {
         if (e.key === 'Enter') {
             const data = await apiKey(query);
-            console.log(data);
             setWeather(data);
             setQuery('');
             setLoading(false);
