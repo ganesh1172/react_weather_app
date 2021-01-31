@@ -29,4 +29,4 @@
     ```
 ## Support
 
-Show some :heart: and star the repo to support the project. Demo version:- https://todo-fyn.netlify.app/
+Show some :heart: and star the repo to support the project. Demo version:- https://react-climate.netlify.app/
